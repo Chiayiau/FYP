@@ -1,0 +1,33 @@
+<!DOCTYPE html>   
+<html>
+<link rel="stylesheet" href="contact us.css">
+
+<script>
+function myFunction() 
+{
+  alert("Thanks for your cantact,we will try our best to improve");
+}
+</script>
+
+<div class="contact">
+  <div class="contact-header">
+    <h1 style="color:#ffe4c4;">Contact us</h1>
+  </div>
+  <div class="contact-form">
+  <form id="Contact-form" method="post" action="Contact us.php">
+    <h3>Username:</h3>
+    <input name="username" type="text" placeholder="Username" <?php echo $error; ?> required/><br>
+    <h3>Email:</h3>
+    <input name="email" type="Email" placeholder="Email" required/>
+	<h3 style="color:	#black;">Message :</h3>
+    <input name="message"  type="text2" placeholder="Messages" required/><br>
+    <br>
+    <input name="send" type="button" value="sumbit" class="submit-button" onclick="myFunction()" />
+	
+	
+  </form>
+  </div>
+</div>
+
+</body>
+</html>  
